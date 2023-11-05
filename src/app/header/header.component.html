@@ -1,0 +1,50 @@
+<!-- header section strats -->
+
+<header class="header_section">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg custom_nav-container" [class.sticky]="isSticky">
+      <span class="navbar-brand">
+        <img src="./assets/images/logo_copy.png" alt="" />
+      </span>
+      <div class="navbar-collapse" id="">
+        <ul class="navbar-nav justify-content-between ">
+          <div class="User_option">
+            <li class="">
+              <a class="mr-4" href="">
+                <span class="impBtn">Login</span>
+              </a>
+              <a class="" href="">
+                <span class="impBtn">Sign up</span>
+              </a>
+            </li>
+          </div>
+        </ul>
+
+        <div class="custom_menu-btn" (click)="toggleNav()">
+          <button>
+            <span class="s-1">
+
+            </span>
+            <span class="s-2">
+
+            </span>
+            <span class="s-3">
+
+            </span>
+          </button>
+        </div>
+        <div id="myNav" class="overlay" [ngClass]="{'menu_width': menuWidth}">
+          <div class="overlay-content">
+            <a routerLink="/home" routerLinkActive="active" (click)="closeSlider()">HOME</a>
+            <a routerLink="/about" routerLinkActive="active" (click)="closeSlider()">ABOUT</a>
+            <a routerLink="/house" routerLinkActive="active" (click)="closeSlider()">HOUSE</a>
+            <a routerLink="/price" routerLinkActive="active" (click)="closeSlider()">PRICING</a>
+            <a routerLink="/contact" routerLinkActive="active" (click)="closeSlider()">CONTACT US</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- end header section -->
