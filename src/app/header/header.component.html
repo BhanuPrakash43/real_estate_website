@@ -22,24 +22,28 @@
 
         <div class="custom_menu-btn" (click)="toggleNav()">
           <button>
-            <span class="s-1">
-
-            </span>
-            <span class="s-2">
-
-            </span>
-            <span class="s-3">
-
-            </span>
+            <span class="s-1"></span>
+            <span class="s-2"></span>
+            <span class="s-3"></span>
           </button>
         </div>
         <div id="myNav" class="overlay" [ngClass]="{'menu_width': menuWidth}">
           <div class="overlay-content">
-            <a routerLink="/home" routerLinkActive="active" (click)="closeSlider()">HOME</a>
-            <a routerLink="/about" routerLinkActive="active" (click)="closeSlider()">ABOUT</a>
-            <a routerLink="/house" routerLinkActive="active" (click)="closeSlider()">HOUSE</a>
-            <a routerLink="/price" routerLinkActive="active" (click)="closeSlider()">PRICING</a>
-            <a routerLink="/contact" routerLinkActive="active" (click)="closeSlider()">CONTACT US</a>
+            <span class="headMenuBtn">
+              <a routerLink="/home" routerLinkActive="active" (click)="closeSlider()">HOME</a>
+            </span>
+            <span class="headMenuBtn">
+              <a routerLink="/about" routerLinkActive="active" (click)="closeSlider()">ABOUT</a>
+            </span>
+            <span class="headMenuBtn">
+              <a routerLink="/house" routerLinkActive="active" (click)="closeSlider()">HOUSE</a>
+            </span>
+            <span class="headMenuBtn">
+              <a routerLink="/price" routerLinkActive="active" (click)="closeSlider()">PRICING</a>
+            </span>
+            <span class="headMenuBtn">
+              <a routerLink="/contact" routerLinkActive="active" (click)="closeSlider()">CONTACT US</a>
+            </span>
           </div>
         </div>
       </div>
