@@ -131,6 +131,20 @@
       flex-wrap: nowrap;
     }
 
+    .fixed {
+      position: fixed;
+      width: 100%;
+      transition: 0.15s ease-in;
+      top: 0px;
+      box-shadow: 12px 5px 15px hsla(0, 0%, 0%, 0.3);
+    }
+
+    .nofixed {
+      position: static;
+      transition: 0.25s ease-out;
+      top: -50px;
+    }
+
 
     .custom_nav-container.navbar-expand-lg .navbar-nav .nav-item .nav-link {
       padding: 10px 15px;
@@ -238,6 +252,7 @@
       border: 2px solid #f97616;
       padding: 2px 10px;
       text-transform: uppercase;
+      cursor: pointer;
     }
 
     .impBtn:hover {
@@ -352,9 +367,8 @@
     /* slider section */
 
     .slider_section {
-      margin-top: 60px;
       padding: 75px 0;
-      color: #0b0b0b;
+      color: white;
     }
 
     .slider_section .container {
@@ -380,6 +394,7 @@
 
     .slider_section .detail-box p {
       margin-top: 25px;
+      font-size: 20px;
     }
 
     .slider_section .detail-box .btn-box {
@@ -443,7 +458,7 @@
     .about_section {
       position: relative;
       padding-top: 75px;
-      margin-top: 60px;
+      /* margin-top: 60px; */
     }
 
     .about_section .row {
@@ -498,7 +513,7 @@
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      margin-top: 60px;
+      /* margin-top: 60px; */
       margin-bottom: 35px;
     }
 
@@ -596,7 +611,7 @@
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
-      margin-top: 60px;
+      /* margin-top: 60px; */
       border: 2px solid #35d1a2;
       border-radius: 10px;
       padding: 20px;
@@ -618,7 +633,7 @@
       -ms-flex-preferred-size: 32%;
       flex-basis: 32%;
       margin: 45px .65%;
-      color: #f6fff8;
+      color: black;
       min-width: 300px;
       border-radius: 10px;
     }
@@ -696,6 +711,7 @@
 
     .price_section .price_container .box .detail-box:hover {
       background-color: #3b6064;
+      color: #ffffff;
     }
 
     .price_section .price_container .box .btn-box a:hover {
@@ -926,7 +942,7 @@
     /* Contact section starts */
 
     .contact_section {
-      margin-top: 100px;
+      /* margin-top: 100px; */
       position: relative;
     }
 
@@ -1285,9 +1301,9 @@
         width: 30%;
       }
 
-      .about_section {
+      /* .about_section {
         margin-top: 120px;
-      }
+      } */
 
       .slider_section .detail-box h1 {
         font-size: 3rem;

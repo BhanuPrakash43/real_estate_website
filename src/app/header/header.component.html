@@ -2,7 +2,7 @@
 
 <header class="header_section">
   <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg custom_nav-container" [class.sticky]="isSticky">
+    <nav class="navbar navbar-expand-lg custom_nav-container" (scroll)="onscroll()" [ngClass]="navbarfixed?'fixed':'nofixed'">
       <span class="navbar-brand">
         <img src="./assets/images/logo_copy.png" alt="" />
       </span>
@@ -10,10 +10,10 @@
         <ul class="navbar-nav justify-content-between ">
           <div class="User_option">
             <li class="">
-              <a class="mr-4" href="">
-                <span class="impBtn">Login</span>
+              <a class="mr-4" routerLink="/login">
+                <span class="impBtn" >Login</span>
               </a>
-              <a class="" href="">
+              <a class="" routerLink="/signup">
                 <span class="impBtn">Sign up</span>
               </a>
             </li>

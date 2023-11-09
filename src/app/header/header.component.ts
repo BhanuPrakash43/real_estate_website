@@ -1,5 +1,7 @@
 import { Component, ElementRef, HostListener } from '@angular/core';
 
+
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -41,18 +43,18 @@ export class HeaderComponent {
   }
 
 
-  isSticky: boolean = false;
+  navbarfixed:boolean = false;
 
-  @HostListener('window:scroll', ['$event'])
-  onWindowScroll() {
-
-    // Determine the scroll position
-
-    const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
-
-    // Set isSticky to true if scrollPosition is greater than a certain value
-
-    this.isSticky = scrollPosition > 100;   // Adjust 100 to your preferred scroll position
+  @HostListener('window:scroll',['$event']) onscroll(){
+    if(window.scrollY > 500)
+    {
+      this.navbarfixed = true;
+    }
+    else
+    {
+      this.navbarfixed = false;
+    }
   }
+
 
 }
