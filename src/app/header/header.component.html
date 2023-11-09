@@ -1,4 +1,4 @@
-<!-- header section strats -->
+<!-- header section starts -->
 
 <header class="header_section">
   <div class="container-fluid">
@@ -43,6 +43,21 @@
             </span>
             <span class="headMenuBtn">
               <a routerLink="/contact" routerLinkActive="active" (click)="closeSlider()">CONTACT US</a>
+            </span>
+          </div>
+          <!-- Move User_option inside overlay-content for smaller screens -->
+          <div class="overlay-content">
+            <span class="headMenuBtn">
+              <span class="customImpBtn">
+              <a class="" routerLink="/login" (click)="closeSlider()">
+                  Login
+                </a>
+              </span>
+              <span class="customImpBtn">
+              <a class="" routerLink="/signup" (click)="closeSlider()">
+                  Sign up
+                </a>
+              </span>
             </span>
           </div>
         </div>

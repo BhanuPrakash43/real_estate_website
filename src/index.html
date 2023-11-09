@@ -253,6 +253,7 @@
       padding: 2px 10px;
       text-transform: uppercase;
       cursor: pointer;
+      /* display: none; */
     }
 
     .impBtn:hover {
@@ -1165,11 +1166,6 @@
     }
 
     @media (max-width: 768px) {
-      /* .hero_area {
-        background: none;
-        background-color: #e9eefc;
-        height: auto;
-      } */
 
 
       .custom_menu-btn button span {
@@ -1285,12 +1281,31 @@
       }
     }
 
-    @media (max-width: 576px) {
-
-      .User_option {
-        /* display: none; */
-        margin-right: 30%;
+    /* Show impBtn class for screen sizes 590px and above */
+    @media (min-width: 595px) {
+      .user_option .impBtn {
+        display: inline-block;
       }
+
+      /* Hide User_option for screen sizes 590px and above */
+      .overlay-content .headMenuBtn .customImpBtn {
+        display: none;
+      }
+    }
+
+
+    /* Show User_option for screen sizes below 590px */
+    @media (max-width: 595px) {
+      .User_option .impBtn{
+        display: none;
+      }
+
+      .overlay-content .headMenuBtn .customImpBtn{
+        display: block;
+      }
+    }
+
+    @media (max-width: 576px) {
 
       .navbar {
         height: 90px;
@@ -1301,9 +1316,6 @@
         width: 30%;
       }
 
-      /* .about_section {
-        margin-top: 120px;
-      } */
 
       .slider_section .detail-box h1 {
         font-size: 3rem;
