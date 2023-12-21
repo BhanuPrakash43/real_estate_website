@@ -974,6 +974,17 @@
       padding: 12px;
     }
 
+    .contact_section textarea {
+      width: 100%;
+      border: none;
+      border-radius: 10px;
+      background-color: #cfdde6;
+      outline: none;
+      color: #252525;
+      margin-top: 25px;
+      padding: 12px;
+    }
+
     .contact_section input::-webkit-input-placeholder {
       color: #2a2a2c;
     }
@@ -990,11 +1001,15 @@
       color: #2a2a2c;
     }
 
-    .contact_section input.message-box {
-      padding: 45px 12px;
+    .contact_section textarea::placeholder {
+      color: #2a2a2c;
     }
 
     .contact_section input:focus {
+      border: 1.5px solid rgb(7, 8, 7);
+    }
+
+    .contact_section textarea:focus {
       border: 1.5px solid rgb(7, 8, 7);
     }
 
@@ -1011,6 +1026,7 @@
 
     .contact_section button:focus {
       border: 2px solid black;
+      background-color: #f18537;
     }
 
     .contact_section .map_container {

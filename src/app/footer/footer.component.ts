@@ -19,4 +19,9 @@ export class FooterComponent implements OnInit{
 
   // Define properties to be used in the HTML template
   currentYear!: number;
+
+  submitNewsLetter(){
+    const popupMessage = "Thank You for Subscribing.";
+    alert(popupMessage);
+  }
 }
